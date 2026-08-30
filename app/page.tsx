@@ -9,7 +9,7 @@ const moments = [
 ];
 
 const events = [
-  ["Casamentos", "Do primeiro acorde da cerimônia à energia da festa.", "/saxofonista-para-casamento-rj", "/images/galerry/foto 1.jpg"],
+  ["Casamentos", "Do primeiro acorde da cerimônia à energia da festa.", "/saxofonista-para-casamento-rj", "/images/cards/casamento.svg"],
   ["15 anos & aniversários", "Recepção, entradas, homenagens e pista.", "/eventos", "/images/cards/celebracao.svg"],
   ["Corporativos", "Coquetéis, recepções, inaugurações e confraternizações.", "/eventos", "/images/cards/corporativo.svg"]
 ];
