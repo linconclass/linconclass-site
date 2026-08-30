@@ -1,140 +1,62 @@
-﻿@page "/contato"
+@page "/contato"
 
-<div class="container-fluid px-0">
-    <!-- Banner Superior (igual outras páginas) -->
-    <section class="page-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="page-title mb-2">Vamos Conversar</h1>
-                    <p class="page-subtitle mb-0">Entre em contato e vamos criar algo especial juntos</p>
+<section class="page-banner">
+    <div class="container">
+        <span class="eyebrow">Contato</span>
+        <h1 class="page-title">Conte um pouco sobre o seu evento</h1>
+        <p class="page-subtitle">Com algumas informações básicas, consigo indicar a experiência musical mais adequada.</p>
+    </div>
+</section>
+
+<div class="container pb-5">
+    <div class="row g-4">
+        <div class="col-lg-7">
+            <div class="contact-card p-4 p-lg-5">
+                <span class="eyebrow text-dark">Para começar</span>
+                <h2 class="display-6 fw-bold mb-3">Envie estes 6 pontos pelo WhatsApp</h2>
+                <div class="briefing-list">
+                    <div><strong>1.</strong><span>Tipo de evento</span><small>Casamento, aniversário, 15 anos, corporativo, homenagem...</small></div>
+                    <div><strong>2.</strong><span>Momento desejado</span><small>Cerimônia, recepção, coquetel, jantar ou festa.</small></div>
+                    <div><strong>3.</strong><span>Data</span><small>Para verificar disponibilidade.</small></div>
+                    <div><strong>4.</strong><span>Local</span><small>Cidade, bairro ou espaço do evento.</small></div>
+                    <div><strong>5.</strong><span>Duração aproximada</span><small>Tempo previsto para a apresentação.</small></div>
+                    <div><strong>6.</strong><span>Estrutura existente</span><small>Se o evento já terá DJ, banda e/ou sonorização.</small></div>
                 </div>
+                <a href="https://wa.me/5521969909037?text=Olá!%20Gostaria%20de%20uma%20proposta%20para%20meu%20evento.%0A%0ATipo%20de%20evento:%20%0AMomento:%20%0AData:%20%0ALocal:%20%0ADuração:%20%0AJá%20terá%20DJ/banda/som:%20"
+                   class="btn btn-success btn-lg mt-4"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="fab fa-whatsapp me-2"></i>Enviar briefing no WhatsApp
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- Conteúdo Principal -->
-    <div class="container mt-4">
-        <div class="row g-4">
-            <!-- LADO A - Informações de Contato -->
-            <div class="col-lg-5">
-                <!-- Seção 1: Informações de Contato -->
-                <div class="contact-section mb-4">
-                    <h4 class="section-header mb-3">
-                        <i class="fas fa-address-book me-2"></i>Informações de Contato
-                    </h4>
+        <div class="col-lg-5">
+            <div class="contact-card p-4 h-100">
+                <span class="eyebrow text-dark">Atendimento</span>
+                <h2 class="h3 fw-bold mb-4">Lincon Class</h2>
 
-                    <!-- WhatsApp -->
-                    <div class="contact-item mb-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <div class="contact-icon me-3">
-                                <i class="fab fa-whatsapp fa-lg text-success"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-0 fw-bold">WhatsApp</h6>
-                                <p class="mb-0 text-muted small">(21) 96990-9037</p>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/5521969909037? text=Olá! Gostaria de mais informações sobre suas performances."
-                           class="btn btn-success btn-sm w-100"
-                           target="_blank">
-                            <i class="fab fa-whatsapp me-1"></i>Conversar Agora
-                        </a>
+                <div class="contact-simple">
+                    <div>
+                        <i class="fab fa-whatsapp"></i>
+                        <div><strong>WhatsApp</strong><span>(21) 96990-9037</span></div>
                     </div>
-
-                    <!-- Telefone -->
-                    <div class="contact-item mb-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-phone fa-lg text-primary"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-0 fw-bold">Telefone</h6>
-                                <p class="mb-0 text-muted small">(21) 96990-9037</p>
-                            </div>
-                        </div>
-                        <a href="tel:+5521969909037" class="btn btn-outline-primary btn-sm w-100">
-                            <i class="fas fa-phone me-1"></i>Ligar Agora
-                        </a>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><strong>Área de atendimento</strong><span>São Gonçalo, Niterói, Rio de Janeiro e região</span></div>
                     </div>
-
-                    <!-- E-mail -->
-                    <div class="contact-item mb-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-envelope fa-lg text-warning"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-0 fw-bold">E-mail</h6>
-                                <p class="mb-0 text-muted small">contato@linconclass.com</p>
-                            </div>
-                        </div>
-                        <a href="mailto:contato@linconclass.com" class="btn btn-outline-warning btn-sm w-100">
-                            <i class="fas fa-envelope me-1"></i>Enviar E-mail
-                        </a>
-                    </div>
-
-                    <!-- Localização -->
-                    <div class="contact-item">
-                        <div class="d-flex align-items-center">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-map-marker-alt fa-lg text-danger"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-0 fw-bold">Localização</h6>
-                                <p class="mb-0 text-muted small">Niterói - RJ e Região</p>
-                            </div>
-                        </div>
+                    <div>
+                        <i class="fas fa-route"></i>
+                        <div><strong>Outras localidades</strong><span>Atendimento mediante disponibilidade.</span></div>
                     </div>
                 </div>
 
-                <!-- Seção 2: Redes Sociais -->
-                <div class="social-section">
-                    <h4 class="section-header mb-3">
-                        <i class="fas fa-share-alt me-2"></i>Redes Sociais
-                    </h4>
-                    <div class="social-grid">
-                        <a href="https://www.instagram.com/linconclass" class="social-btn instagram">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://www.youtube.com/linconclass" class="social-btn youtube">
-                            <i class="fab fa-youtube"></i>
-                            <span>YouTube</span>
-                        </a>
-                        <a href="https://www.facebook.com/linconclassoficial" class="social-btn facebook">
-                            <i class="fab fa-facebook"></i>
-                            <span>Facebook</span>
-                        </a>
-                        <a href="#" class="social-btn tiktok">
-                            <i class="fab fa-tiktok"></i>
-                            <span>TikTok</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LADO B - Formulário -->
-            <div class="col-lg-7">
-                <div class="form-section">
-                    <div class="form-header mb-4">
-                        <h4 class="section-header mb-2">
-                            <i class="fas fa-edit me-2"></i>Briefing para Evento
-                        </h4>
-                        <p class="text-muted mb-0">
-                            Preencha o formulário abaixo para contar sobre seu evento.
-                            Entrarei em contato para discutirmos os detalhes!
-                        </p>
-                    </div>
-
-                    <div class="form-embed-container">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://forms.office.com/r/xy8sUG9xsx"
-                                    title="Formulário de Briefing"
-                                    style="border: none; border-radius: 8px;">
-                            </iframe>
-                        </div>
-                    </div>
+                <hr class="my-4" />
+                <p class="text-muted">A proposta é preparada conforme o momento do evento, formação musical, duração, estrutura e deslocamento.</p>
+                <div class="d-flex gap-3 fs-4">
+                    <a href="https://www.instagram.com/linconclass" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@linconclass" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/linconclassoficial" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
         </div>
