@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://linconclass.com.br/sitemap.xml
