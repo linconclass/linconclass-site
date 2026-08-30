@@ -9,9 +9,9 @@ const moments = [
 ];
 
 const events = [
-  ["Casamentos", "Do primeiro acorde da cerimônia à energia da festa.", "/saxofonista-para-casamento-rj"],
-  ["15 anos & aniversários", "Recepção, entradas, homenagens e pista.", "/eventos"],
-  ["Corporativos", "Coquetéis, recepções, inaugurações e confraternizações.", "/eventos"]
+  ["Casamentos", "Do primeiro acorde da cerimônia à energia da festa.", "/saxofonista-para-casamento-rj", "/images/galerry/foto 1.jpg"],
+  ["15 anos & aniversários", "Recepção, entradas, homenagens e pista.", "/eventos", "/images/cards/celebracao.svg"],
+  ["Corporativos", "Coquetéis, recepções, inaugurações e confraternizações.", "/eventos", "/images/cards/corporativo.svg"]
 ];
 
 export default function HomePage() {
@@ -60,7 +60,7 @@ export default function HomePage() {
 
       <section className="section shell">
         <div className="sectionIntro"><span className="eyebrow">Eventos</span><h2>Uma solução musical para cada celebração.</h2></div>
-        <div className="cardGrid three">{events.map(([title, text, href]) => <Link className="eventCard" href={href} key={title}><span className="eventCardVisual" /><h3>{title}</h3><p>{text}</p><span className="textLink">Explorar →</span></Link>)}</div>
+        <div className="cardGrid three">{events.map(([title, text, href, image]) => <Link className="eventCard" href={href} key={title}><span className="eventCardVisual" style={{backgroundImage:`linear-gradient(180deg,rgba(9,16,26,.03),rgba(9,16,26,.25)),url('${image}')`}} /><h3>{title}</h3><p>{text}</p><span className="textLink">Explorar →</span></Link>)}</div>
       </section>
 
       <section className="section shell">
