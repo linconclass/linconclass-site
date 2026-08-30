@@ -2,47 +2,52 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
     flex: 1;
+    min-width: 0;
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background: linear-gradient(180deg, #0d1420 0%, #111c2d 58%, #0b111b 100%);
+    border-right: 1px solid rgba(214, 168, 75, .16);
 }
 
 .top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
+    background: #171c24 !important;
+    border-bottom: 1px solid rgba(255,255,255,.08);
     justify-content: flex-end;
-    height: 3.5rem;
+    min-height: 3.5rem;
     display: flex;
     align-items: center;
 }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
+.top-row ::deep a,
+.top-row ::deep .btn-link {
+    white-space: nowrap;
+    text-decoration: none;
+}
 
-    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-        text-decoration: underline;
-    }
-
-    .top-row ::deep a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row ::deep a:hover,
+.top-row ::deep .btn-link:hover {
+    text-decoration: none;
+}
 
 @media (max-width: 640.98px) {
     .top-row {
-        justify-content: space-between;
+        min-height: 3.4rem;
     }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
+    .top-row > .container-fluid {
+        justify-content: flex-end !important;
+        padding-right: .65rem;
+    }
+
+    .top-row ::deep .btn {
+        font-size: .78rem;
+        padding: .42rem .72rem;
     }
 }
 
@@ -52,25 +57,21 @@ main {
     }
 
     .sidebar {
-        width: 250px;
+        width: 220px;
         height: 100vh;
         position: sticky;
         top: 0;
+        flex: 0 0 220px;
     }
 
     .top-row {
         position: sticky;
         top: 0;
-        z-index: 1;
+        z-index: 20;
     }
 
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row, article {
+    .top-row,
+    article {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
