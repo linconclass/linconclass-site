@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const moments = [
@@ -28,8 +29,19 @@ export default function HomePage() {
             </div>
             <p className="serviceArea">São Gonçalo · Niterói · Rio de Janeiro e região <span>·</span> Outras localidades mediante disponibilidade</p>
           </div>
-          <div className="heroVisual" aria-label="Espaço reservado para fotografia principal da Lincon Class">
-            <div className="visualFrame"><span>Imagem real em curadoria</span><strong>Performance · presença · experiência</strong></div>
+          <div className="heroVisual">
+            <div className="visualFrame">
+              <Image
+                className="heroImage"
+                src="/images/galerry/foto 1.jpg"
+                alt="Lincon Class em performance musical ao vivo"
+                fill
+                priority
+                sizes="(max-width: 900px) 90vw, 42vw"
+              />
+              <div className="visualShade" />
+              <div className="visualCaption"><span>Lincon Class</span><strong>Performance · presença · experiência</strong></div>
+            </div>
           </div>
         </div>
       </section>
@@ -52,7 +64,7 @@ export default function HomePage() {
       </section>
 
       <section className="section shell">
-        <div className="storyPanel"><div><span className="eyebrow">Trajetória</span><h2>Experiência construída no palco — aplicada ao seu evento.</h2><p>A trajetória de Lincon Class começou ainda jovem e passou por bandas, coros, orquestras, apresentações culturais, acompanhamento de artistas e pelo mercado profissional de eventos.</p><Link className="textLink" href="/sobre">Conhecer a trajetória →</Link></div><div className="storyProof"><span>Autoridade sem números inflados.</span><strong>Palco, repertório, leitura de ambiente e experiência real.</strong></div></div>
+        <div className="storyPanel"><div><span className="eyebrow">Trajetória</span><h2>Experiência construída no palco — aplicada ao seu evento.</h2><p>A trajetória de Lincon Class começou ainda jovem e passou por bandas, coros, orquestras, apresentações culturais, acompanhamento de artistas e pelo mercado profissional de eventos.</p><Link className="textLink" href="/sobre">Conhecer a trajetória →</Link></div><div className="storyProof storyProofPhoto"><span>Experiência real de palco.</span><strong>Repertório, leitura de ambiente e presença musical.</strong></div></div>
       </section>
 
       <section className="section shell"><div className="ctaPanel"><span className="eyebrow">Seu evento</span><h2>Vamos pensar na música certa?</h2><p>Conte data, local e o que está planejando. A partir disso, indicamos a configuração mais adequada.</p><Link href="/contato" className="button buttonPrimary">Começar pelo briefing</Link></div></section>
