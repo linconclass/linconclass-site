@@ -1,9 +1,9 @@
-name: Build Lincon Class Preview
+name: Build Lincon Class V3
 
 on:
   push:
     branches:
-      - audit/lincon-class-2026
+      - v3/lincon-class-hybrid
   pull_request:
     branches:
       - master
@@ -15,20 +15,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          dotnet-version: '10.0.x'
+          node-version: '22'
+          cache: 'npm'
 
-      - name: Restore
-        run: dotnet restore LinconClass.csproj
+      - name: Install dependencies
+        run: npm install
 
-      - name: Publish
-        run: dotnet publish LinconClass.csproj -c Release -o publish
+      - name: Typecheck
+        run: npm run typecheck
 
-      - name: Upload static preview artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: lincon-class-preview
-          path: publish/wwwroot
-          if-no-files-found: error
+      - name: Build
+        run: npm run build
