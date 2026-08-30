@@ -1,9 +1,15 @@
 @page "/galeriavideos"
+<PageTitle>Vídeos | Lincon Class</PageTitle>
+<HeadContent>
+    <meta name="description" content="Vídeos de Lincon Class em cerimônias, recepções, Sax Live, eventos corporativos, formações e apresentações musicais." />
+    <link rel="canonical" href="https://linconclass.com.br/galeriavideos" />
+</HeadContent>
 
 <section class="page-banner">
     <div class="container">
-        <h1 class="page-title">Vídeos</h1>
-        <p class="page-subtitle">Performances reais organizadas por experiência e tipo de evento.</p>
+        <span class="eyebrow">Vídeos</span>
+        <h1 class="page-title">Performances reais por experiência</h1>
+        <p class="page-subtitle">A seleção prioriza contexto, qualidade de áudio e capacidade de mostrar a experiência do evento.</p>
     </div>
 </section>
 
@@ -18,10 +24,10 @@
             {
                 <div class="col-lg-4 col-md-6">
                     <div class="video-card-compact card-modern p-4 h-100">
-                        <div class="ratio ratio-16x9 bg-dark rounded mb-3 d-flex align-items-center justify-content-center">
+                        <div class="ratio ratio-16x9 bg-dark rounded mb-3 d-flex align-items-center justify-content-center" aria-hidden="true">
                             <i class="fas fa-play-circle fa-3x text-white-50"></i>
                         </div>
-                        <h6 class="mb-1">@categoria.Titulo</h6>
+                        <h2 class="h6 mb-1">@categoria.Titulo</h2>
                         <p class="text-muted mb-0 small">@categoria.Descricao</p>
                     </div>
                 </div>
