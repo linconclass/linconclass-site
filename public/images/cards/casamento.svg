@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Casamento</title>
+  <desc id="desc">Arte geométrica abstrata para representar cerimônias e casamentos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1522"/>
+      <stop offset="1" stop-color="#263854"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d5a84e" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#b98933" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="930" cy="150" r="230" fill="#d5a84e" opacity=".09"/>
+  <circle cx="1040" cy="610" r="320" fill="#ffffff" opacity=".035"/>
+  <path d="M180 520C330 330 470 240 600 250c130 10 245 110 420 302" fill="none" stroke="url(#gold)" stroke-width="24" stroke-linecap="round"/>
+  <path d="M286 493C410 360 508 312 601 319c100 7 195 73 309 183" fill="none" stroke="#f5f1e8" stroke-opacity=".34" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="515" cy="305" r="108" fill="none" stroke="#d5a84e" stroke-width="8" opacity=".62"/>
+  <circle cx="686" cy="305" r="108" fill="none" stroke="#f5f1e8" stroke-width="8" opacity=".62"/>
+  <rect x="88" y="82" width="170" height="12" rx="6" fill="#d5a84e" opacity=".9"/>
+  <rect x="88" y="112" width="280" height="8" rx="4" fill="#f5f1e8" opacity=".22"/>
+</svg>
